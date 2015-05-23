@@ -1,5 +1,6 @@
 package com.properjob.energymanipulation;
 
+import com.properjob.energymanipulation.init.ModBlocks;
 import com.properjob.energymanipulation.proxy.CommonProxy;
 import com.properjob.energymanipulation.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -22,8 +23,8 @@ public class EnergyManipulation {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        /*ModBlocks.init();
-        ModItems.init();
+        ModBlocks.init();
+        /*ModItems.init();
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         proxy.registerTileEntities();
         proxy.registerRendering();*/
