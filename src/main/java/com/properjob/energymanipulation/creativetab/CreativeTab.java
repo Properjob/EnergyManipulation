@@ -11,12 +11,12 @@ import net.minecraft.item.Item;
 public class CreativeTab {
 
 
-    public static final CreativeTabs FORCE_TAB = new CreativeTabs(Reference.LOWERCASE_MOD_ID)
+    public static final CreativeTabs EM_TAB = new CreativeTabs(Reference.LOWERCASE_MOD_ID)
     {
         @Override
         public Item getTabIconItem()
         {
-            return Item.getItemFromBlock(ModBlocks.BlockEnergyShield);
+            return Item.getItemFromBlock(ModBlocks.blockEnergyShield);
         }
 
         @Override

@@ -13,21 +13,21 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  */
 public class BlockEM extends Block {
 
-    public BlockEM(Material material)
-    {
-        super(material);
-        this.setCreativeTab(CreativeTab.FORCE_TAB);
-    }
-
     public BlockEM()
     {
         this(Material.rock);
     }
 
+    public BlockEM(Material material)
+    {
+        super(material);
+        this.setCreativeTab(CreativeTab.EM_TAB);
+    }
+
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("tile.%s%s", Reference.LOWERCASE_MOD_ID + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
